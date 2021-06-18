@@ -6,7 +6,7 @@ import java.sql.*;
 
 public class Util implements AutoCloseable {
     // реализуйте настройку соеденения с БД
-    private static final String URL = "jdbc:mysql://localhost:3306/jmtask?serverTimezone=Europe/Moscow&useSSL=false";
+    private static final String URL = "jdbc:mysql://localhost:3306/jmtask?allowPublicKeyRetrieval=true&useSSL=false";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "root";
     Connection connection = null;
